@@ -31,4 +31,12 @@ $(function () {
         })
     });
 
+    $('#query').autocomplete({
+        serviceUrl: $('#searchUrl').val(),
+        deferRequestBy: 500,
+        onSelect: function (suggestion) {
+            $('.view-btn[data-task-id=' + suggestion.data +']')[0].click();
+        }
+    });
+
 });

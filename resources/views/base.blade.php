@@ -17,6 +17,7 @@
         <script src="{{ asset('bower_resources/jquery/dist/jquery.min.js') }}"></script>
         <script src="{{ asset('bower_resources/bootstrap/dist/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('bower_resources/jquery-form/jquery.form.js') }}"></script>
+        <script src="{{ asset('bower_resources/devbridge-autocomplete/dist/jquery.autocomplete.min.js') }}"></script>
         <script src="{{ asset('js/todo.js') }}"></script>
     </body>
 </html>

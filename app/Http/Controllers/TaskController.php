@@ -90,4 +90,16 @@ class TaskController extends Controller
         return redirect('task/index');
     }
 
+    public function search (Request $request) {
+        $query = $request->input('query');
+        $user = session('user');
+
+        $tasks = $user->tasks()->select('task.id as data', \DB::raw('concat(task.name, ", ", task.desc) as value'))
+        ->where('name', 'like', '%' . $query . '%')->orWhere('desc', 'like', '%' . $query . '%')->get();
+
+        return response()->json([
+            'suggestions' => $tasks
+        ]);
+    }
+
 }

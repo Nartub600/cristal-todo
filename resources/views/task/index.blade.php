@@ -28,7 +28,7 @@
                     </h4>
                 </td>
                 <td class="text-center">
-                    <a class="btn btn-default" href="{{ url('task', $task->id) }}">
+                    <a data-task-id="{{ $task->id }}" class="view-btn btn btn-default" href="{{ url('task', $task->id) }}">
                         <span class="glyphicon glyphicon-search"></span>
                     </a>
                     @if (!$task->done)
@@ -52,6 +52,15 @@
             </tr>
             @endforeach
         </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="5">
+                    <input type="text" class="form-control" id="query" placeholder="Buscar tareas">
+                    <input type="hidden" id="searchUrl" value="{{ url('task/search') }}">
+                </td>
+            </tr>
+        </tfoot>
 
     </table>
 
