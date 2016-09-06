@@ -94,7 +94,7 @@ class TaskController extends Controller
         $query = $request->input('query');
         $user = session('user');
 
-        $tasks = $user->tasks()->select('task.id as data', \DB::raw('concat(task.name, ", ", task.desc) as value'))
+        $tasks = $user->tasks()->select('task.id as data', \DB::raw('concat(task.name, ": ", task.desc) as value'))
         ->where('name', 'like', '%' . $query . '%')->orWhere('desc', 'like', '%' . $query . '%')->get();
 
         return response()->json([
