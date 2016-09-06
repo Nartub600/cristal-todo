@@ -1,0 +1,25 @@
+{
+  "name": "cristal-todo",
+  "description": "Webapp de TO-DOs para cristalmedia",
+  "main": "",
+  "authors": [
+    "Nartub <maimar@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "todo"
+  ],
+  "homepage": "https://github.com/Nartub600/cristal-todo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "jquery-form": "malsup/form#^3.46.0"
+  }
+}
