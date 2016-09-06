@@ -9,8 +9,8 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th class="text-center">Nombre</th>
-                <th class="text-center">Descripción</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
                 <th class="text-center">Estado</th>
                 <th class="text-center">Opciones</th>
             </tr>
