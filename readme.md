@@ -13,8 +13,10 @@
     - `DB_DATABASE`
     - `DB_USERNAME`
     - `DB_PASSWORD`
-3. Ejecutar:
+3. Generar la base de datos:
     - `php artisan migrate:install`
     - `php artisan migrate`
     - `php artisan db:seed`
-4. El directorio storage debe tener permisos de escritura
+4. Generar una clave para la aplicación
+    - `php artisan key:generate`
+5. El directorio storage debe tener permisos de escritura
